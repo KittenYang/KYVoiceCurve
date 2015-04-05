@@ -23,5 +23,13 @@
     [super didReceiveMemoryWarning];
     
 }
+- (IBAction)presentAction:(id)sender {
+
+    UIVisualEffectView *blurView = [[UIVisualEffectView alloc]initWithEffect:[UIBlurEffect effectWithStyle:UIBlurEffectStyleDark]];
+    [UIView transitionWithView:self.view duration:0.3 options:UIViewAnimationOptionTransitionCrossDissolve animations: ^ {
+        [self.view addSubview:blurView];
+    } completion:nil];
+    
+}
 
 @end
