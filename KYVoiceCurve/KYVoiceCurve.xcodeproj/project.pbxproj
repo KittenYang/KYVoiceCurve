@@ -14,6 +14,7 @@
 		5FCD1F4E1AD18C23000082C2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FCD1F4D1AD18C23000082C2 /* Images.xcassets */; };
 		5FCD1F511AD18C23000082C2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FCD1F4F1AD18C23000082C2 /* LaunchScreen.xib */; };
 		5FCD1F5D1AD18C23000082C2 /* KYVoiceCurveTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FCD1F5C1AD18C23000082C2 /* KYVoiceCurveTests.m */; };
+		5FCD1F681AD1AD84000082C2 /* VoiceCurveView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FCD1F671AD1AD84000082C2 /* VoiceCurveView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		5FCD1F561AD18C23000082C2 /* KYVoiceCurveTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KYVoiceCurveTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FCD1F5B1AD18C23000082C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5FCD1F5C1AD18C23000082C2 /* KYVoiceCurveTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KYVoiceCurveTests.m; sourceTree = "<group>"; };
+		5FCD1F661AD1AD84000082C2 /* VoiceCurveView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VoiceCurveView.h; sourceTree = "<group>"; };
+		5FCD1F671AD1AD84000082C2 /* VoiceCurveView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VoiceCurveView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +89,7 @@
 				5FCD1F471AD18C23000082C2 /* ViewController.h */,
 				5FCD1F481AD18C23000082C2 /* ViewController.m */,
 				5FCD1F4A1AD18C23000082C2 /* Main.storyboard */,
+				5FCD1F691AD1AD8C000082C2 /* VoiceCurveView */,
 				5FCD1F4D1AD18C23000082C2 /* Images.xcassets */,
 				5FCD1F4F1AD18C23000082C2 /* LaunchScreen.xib */,
 				5FCD1F401AD18C23000082C2 /* Supporting Files */,
@@ -117,6 +121,15 @@
 				5FCD1F5B1AD18C23000082C2 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5FCD1F691AD1AD8C000082C2 /* VoiceCurveView */ = {
+			isa = PBXGroup;
+			children = (
+				5FCD1F661AD1AD84000082C2 /* VoiceCurveView.h */,
+				5FCD1F671AD1AD84000082C2 /* VoiceCurveView.m */,
+			);
+			name = VoiceCurveView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,6 +233,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5FCD1F491AD18C23000082C2 /* ViewController.m in Sources */,
+				5FCD1F681AD1AD84000082C2 /* VoiceCurveView.m in Sources */,
 				5FCD1F461AD18C23000082C2 /* AppDelegate.m in Sources */,
 				5FCD1F431AD18C23000082C2 /* main.m in Sources */,
 			);
