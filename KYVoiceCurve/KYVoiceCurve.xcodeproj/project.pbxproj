@@ -1,0 +1,432 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5FCD1F431AD18C23000082C2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FCD1F421AD18C23000082C2 /* main.m */; };
+		5FCD1F461AD18C23000082C2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FCD1F451AD18C23000082C2 /* AppDelegate.m */; };
+		5FCD1F491AD18C23000082C2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FCD1F481AD18C23000082C2 /* ViewController.m */; };
+		5FCD1F4C1AD18C23000082C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FCD1F4A1AD18C23000082C2 /* Main.storyboard */; };
+		5FCD1F4E1AD18C23000082C2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FCD1F4D1AD18C23000082C2 /* Images.xcassets */; };
+		5FCD1F511AD18C23000082C2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FCD1F4F1AD18C23000082C2 /* LaunchScreen.xib */; };
+		5FCD1F5D1AD18C23000082C2 /* KYVoiceCurveTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FCD1F5C1AD18C23000082C2 /* KYVoiceCurveTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5FCD1F571AD18C23000082C2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5FCD1F351AD18C22000082C2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5FCD1F3C1AD18C22000082C2;
+			remoteInfo = KYVoiceCurve;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5FCD1F3D1AD18C23000082C2 /* KYVoiceCurve.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KYVoiceCurve.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FCD1F411AD18C23000082C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5FCD1F421AD18C23000082C2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5FCD1F441AD18C23000082C2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5FCD1F451AD18C23000082C2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5FCD1F471AD18C23000082C2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		5FCD1F481AD18C23000082C2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		5FCD1F4B1AD18C23000082C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5FCD1F4D1AD18C23000082C2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		5FCD1F501AD18C23000082C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		5FCD1F561AD18C23000082C2 /* KYVoiceCurveTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KYVoiceCurveTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FCD1F5B1AD18C23000082C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5FCD1F5C1AD18C23000082C2 /* KYVoiceCurveTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KYVoiceCurveTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5FCD1F3A1AD18C22000082C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FCD1F531AD18C23000082C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5FCD1F341AD18C22000082C2 = {
+			isa = PBXGroup;
+			children = (
+				5FCD1F3F1AD18C23000082C2 /* KYVoiceCurve */,
+				5FCD1F591AD18C23000082C2 /* KYVoiceCurveTests */,
+				5FCD1F3E1AD18C23000082C2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5FCD1F3E1AD18C23000082C2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5FCD1F3D1AD18C23000082C2 /* KYVoiceCurve.app */,
+				5FCD1F561AD18C23000082C2 /* KYVoiceCurveTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5FCD1F3F1AD18C23000082C2 /* KYVoiceCurve */ = {
+			isa = PBXGroup;
+			children = (
+				5FCD1F441AD18C23000082C2 /* AppDelegate.h */,
+				5FCD1F451AD18C23000082C2 /* AppDelegate.m */,
+				5FCD1F471AD18C23000082C2 /* ViewController.h */,
+				5FCD1F481AD18C23000082C2 /* ViewController.m */,
+				5FCD1F4A1AD18C23000082C2 /* Main.storyboard */,
+				5FCD1F4D1AD18C23000082C2 /* Images.xcassets */,
+				5FCD1F4F1AD18C23000082C2 /* LaunchScreen.xib */,
+				5FCD1F401AD18C23000082C2 /* Supporting Files */,
+			);
+			path = KYVoiceCurve;
+			sourceTree = "<group>";
+		};
+		5FCD1F401AD18C23000082C2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5FCD1F411AD18C23000082C2 /* Info.plist */,
+				5FCD1F421AD18C23000082C2 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5FCD1F591AD18C23000082C2 /* KYVoiceCurveTests */ = {
+			isa = PBXGroup;
+			children = (
+				5FCD1F5C1AD18C23000082C2 /* KYVoiceCurveTests.m */,
+				5FCD1F5A1AD18C23000082C2 /* Supporting Files */,
+			);
+			path = KYVoiceCurveTests;
+			sourceTree = "<group>";
+		};
+		5FCD1F5A1AD18C23000082C2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5FCD1F5B1AD18C23000082C2 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5FCD1F3C1AD18C22000082C2 /* KYVoiceCurve */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5FCD1F601AD18C23000082C2 /* Build configuration list for PBXNativeTarget "KYVoiceCurve" */;
+			buildPhases = (
+				5FCD1F391AD18C22000082C2 /* Sources */,
+				5FCD1F3A1AD18C22000082C2 /* Frameworks */,
+				5FCD1F3B1AD18C22000082C2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KYVoiceCurve;
+			productName = KYVoiceCurve;
+			productReference = 5FCD1F3D1AD18C23000082C2 /* KYVoiceCurve.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5FCD1F551AD18C23000082C2 /* KYVoiceCurveTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5FCD1F631AD18C23000082C2 /* Build configuration list for PBXNativeTarget "KYVoiceCurveTests" */;
+			buildPhases = (
+				5FCD1F521AD18C23000082C2 /* Sources */,
+				5FCD1F531AD18C23000082C2 /* Frameworks */,
+				5FCD1F541AD18C23000082C2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5FCD1F581AD18C23000082C2 /* PBXTargetDependency */,
+			);
+			name = KYVoiceCurveTests;
+			productName = KYVoiceCurveTests;
+			productReference = 5FCD1F561AD18C23000082C2 /* KYVoiceCurveTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5FCD1F351AD18C22000082C2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = "Kitten Yang";
+				TargetAttributes = {
+					5FCD1F3C1AD18C22000082C2 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					5FCD1F551AD18C23000082C2 = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = 5FCD1F3C1AD18C22000082C2;
+					};
+				};
+			};
+			buildConfigurationList = 5FCD1F381AD18C22000082C2 /* Build configuration list for PBXProject "KYVoiceCurve" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5FCD1F341AD18C22000082C2;
+			productRefGroup = 5FCD1F3E1AD18C23000082C2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5FCD1F3C1AD18C22000082C2 /* KYVoiceCurve */,
+				5FCD1F551AD18C23000082C2 /* KYVoiceCurveTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5FCD1F3B1AD18C22000082C2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FCD1F4C1AD18C23000082C2 /* Main.storyboard in Resources */,
+				5FCD1F511AD18C23000082C2 /* LaunchScreen.xib in Resources */,
+				5FCD1F4E1AD18C23000082C2 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FCD1F541AD18C23000082C2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5FCD1F391AD18C22000082C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FCD1F491AD18C23000082C2 /* ViewController.m in Sources */,
+				5FCD1F461AD18C23000082C2 /* AppDelegate.m in Sources */,
+				5FCD1F431AD18C23000082C2 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FCD1F521AD18C23000082C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FCD1F5D1AD18C23000082C2 /* KYVoiceCurveTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5FCD1F581AD18C23000082C2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5FCD1F3C1AD18C22000082C2 /* KYVoiceCurve */;
+			targetProxy = 5FCD1F571AD18C23000082C2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5FCD1F4A1AD18C23000082C2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5FCD1F4B1AD18C23000082C2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5FCD1F4F1AD18C23000082C2 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5FCD1F501AD18C23000082C2 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5FCD1F5E1AD18C23000082C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5FCD1F5F1AD18C23000082C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5FCD1F611AD18C23000082C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Xinyu Li (XWYND9KE57)";
+				INFOPLIST_FILE = KYVoiceCurve/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5FCD1F621AD18C23000082C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = KYVoiceCurve/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		5FCD1F641AD18C23000082C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = KYVoiceCurveTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KYVoiceCurve.app/KYVoiceCurve";
+			};
+			name = Debug;
+		};
+		5FCD1F651AD18C23000082C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = KYVoiceCurveTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KYVoiceCurve.app/KYVoiceCurve";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5FCD1F381AD18C22000082C2 /* Build configuration list for PBXProject "KYVoiceCurve" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5FCD1F5E1AD18C23000082C2 /* Debug */,
+				5FCD1F5F1AD18C23000082C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5FCD1F601AD18C23000082C2 /* Build configuration list for PBXNativeTarget "KYVoiceCurve" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5FCD1F611AD18C23000082C2 /* Debug */,
+				5FCD1F621AD18C23000082C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5FCD1F631AD18C23000082C2 /* Build configuration list for PBXNativeTarget "KYVoiceCurveTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5FCD1F641AD18C23000082C2 /* Debug */,
+				5FCD1F651AD18C23000082C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5FCD1F351AD18C22000082C2 /* Project object */;
+}
