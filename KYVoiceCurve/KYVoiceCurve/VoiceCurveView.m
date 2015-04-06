@@ -58,12 +58,7 @@
     blurView.alpha = 0.0f;
     blurView.tag = 101;
     
-    UIView *lineView = [[UIView alloc] initWithFrame:CGRectMake(0, self.bounds.size.height, self.bounds.size.width, 1)];
-    lineView.backgroundColor = [UIColor whiteColor];
-    [blurView addSubview:lineView];
-    
     [self addSubview:blurView];
-
 
     //layer1
     layer1 = [CAShapeLayer layer];
@@ -178,11 +173,11 @@
 -(void)drawRect:(CGRect)rect{
     
     CGFloat volume = [self.recorder averagePowerForChannel:0];
-    CGFloat controlY1 = (-volume >= 59 && -volume <= 60) ? ScreenHeight-5 : ScreenHeight - (volume+60)*8;
-    CGFloat controlY2 = (-volume >= 59 && -volume <= 60) ? ScreenHeight-5 : ScreenHeight - ((volume+60)-10)*8;
-    CGFloat controlY3 = (-volume >= 59 && -volume <= 60) ? ScreenHeight-5 : ScreenHeight - ((volume+60)-60)*8;
-    CGFloat controlY4 = (-volume >= 59 && -volume <= 60) ? ScreenHeight-5 : ScreenHeight - ((volume+60)-20)*8;
-    CGFloat controlY5 = (-volume >= 59 && -volume <= 60) ? ScreenHeight-5 : ScreenHeight - ((volume+60)-5)*8;
+    CGFloat controlY1 = (-volume >= 57 && -volume <= 63) ? ScreenHeight-5 : ScreenHeight - (volume+60)*2.1;
+    CGFloat controlY2 = (-volume >= 57 && -volume <= 63) ? ScreenHeight-5 : ScreenHeight - ((volume+60)+10)*2.2;
+    CGFloat controlY3 = (-volume >= 57 && -volume <= 63) ? ScreenHeight-5 : ScreenHeight - ((volume+60)+30)*2.3;
+    CGFloat controlY4 = (-volume >= 57 && -volume <= 63) ? ScreenHeight-5 : ScreenHeight - ((volume+60)+15)*2.4;
+    CGFloat controlY5 = (-volume >= 57 && -volume <= 63) ? ScreenHeight-5 : ScreenHeight - ((volume+60)+5)*2.5;
     
     layer1.path = [self createBezierPathWithStartPoint:CGPointMake(30, ScreenHeight) endPoint:CGPointMake(ScreenWidth/2-10, ScreenHeight) controlPoint:CGPointMake((ScreenWidth/2-10-30)/2+30, controlY1)].CGPath;
     
@@ -194,7 +189,6 @@
     
     layer5.path = [self createBezierPathWithStartPoint:CGPointMake(ScreenWidth*5/8-20, ScreenHeight) endPoint:CGPointMake(ScreenWidth-20, ScreenHeight) controlPoint:CGPointMake((ScreenWidth-20-(ScreenWidth*5/8-20))/2+ScreenWidth*5/8-20, controlY5)].CGPath;
 }
-
 
 
 
