@@ -13,6 +13,7 @@
 
 
 @interface ViewController ()
+@property (strong, nonatomic) IBOutlet UIButton *longPressBt;
 
 @end
 
@@ -22,6 +23,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    UILongPressGestureRecognizer *longGes = [[UILongPressGestureRecognizer alloc]initWithTarget:self action:@selector(longPress:)];
+    [self.longPressBt addGestureRecognizer:longGes];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -30,11 +33,15 @@
 }
 - (IBAction)presentAction:(id)sender {
 
+//    VoiceCurveView *voiceCurveView = [[VoiceCurveView alloc]initWithFrame:self.view.frame superView:self.view];
+//    [voiceCurveView present];
+}
+
+-(void)longPress:(UILongPressGestureRecognizer *)longGes{
+    longGes.minimumPressDuration = 0.8;
     VoiceCurveView *voiceCurveView = [[VoiceCurveView alloc]initWithFrame:self.view.frame superView:self.view];
     [voiceCurveView present];
 }
-
-
 
 
 @end
