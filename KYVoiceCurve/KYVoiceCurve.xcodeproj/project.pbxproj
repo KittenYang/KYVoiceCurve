@@ -16,6 +16,7 @@
 		5FCD1F5D1AD18C23000082C2 /* KYVoiceCurveTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FCD1F5C1AD18C23000082C2 /* KYVoiceCurveTests.m */; };
 		5FCD1F681AD1AD84000082C2 /* VoiceCurveView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FCD1F671AD1AD84000082C2 /* VoiceCurveView.m */; };
 		5FCD1F6B1AD27AE3000082C2 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FCD1F6A1AD27AE3000082C2 /* AVFoundation.framework */; };
+		5FCD1F6D1AD2FD7B000082C2 /* record.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5FCD1F6C1AD2FD7B000082C2 /* record.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		5FCD1F661AD1AD84000082C2 /* VoiceCurveView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VoiceCurveView.h; sourceTree = "<group>"; };
 		5FCD1F671AD1AD84000082C2 /* VoiceCurveView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VoiceCurveView.m; sourceTree = "<group>"; };
 		5FCD1F6A1AD27AE3000082C2 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		5FCD1F6C1AD2FD7B000082C2 /* record.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = record.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 				5FCD1F691AD1AD8C000082C2 /* VoiceCurveView */,
 				5FCD1F4D1AD18C23000082C2 /* Images.xcassets */,
 				5FCD1F4F1AD18C23000082C2 /* LaunchScreen.xib */,
+				5FCD1F6C1AD2FD7B000082C2 /* record.mp3 */,
 				5FCD1F401AD18C23000082C2 /* Supporting Files */,
 			);
 			path = KYVoiceCurve;
@@ -219,6 +222,7 @@
 				5FCD1F4C1AD18C23000082C2 /* Main.storyboard in Resources */,
 				5FCD1F511AD18C23000082C2 /* LaunchScreen.xib in Resources */,
 				5FCD1F4E1AD18C23000082C2 /* Images.xcassets in Resources */,
+				5FCD1F6D1AD2FD7B000082C2 /* record.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -34,6 +34,12 @@
 -(void)longPress:(UILongPressGestureRecognizer *)longGes{
     if (longGes.state == UIGestureRecognizerStateBegan) {
         
+        NSString *path = [[NSBundle mainBundle] pathForResource:@"record" ofType:@"mp3"];
+        NSURL *url = [NSURL fileURLWithPath:path];
+        SystemSoundID soundId;
+        AudioServicesCreateSystemSoundID((CFURLRef)CFBridgingRetain(url), &soundId);
+        AudioServicesPlaySystemSound(soundId);
+        
         VoiceCurveView *voiceCurveView = [[VoiceCurveView alloc]initWithFrame:self.view.frame superView:self.view];
         [voiceCurveView present];        
     }
