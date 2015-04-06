@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+
 @interface VoiceCurveView : UIView
+
+
+-(id)initWithFrame:(CGRect)frame superView:(UIView *)superView;
+-(void)present;
 
 @end

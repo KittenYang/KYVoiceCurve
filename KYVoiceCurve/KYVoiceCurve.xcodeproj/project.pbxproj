@@ -15,6 +15,7 @@
 		5FCD1F511AD18C23000082C2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FCD1F4F1AD18C23000082C2 /* LaunchScreen.xib */; };
 		5FCD1F5D1AD18C23000082C2 /* KYVoiceCurveTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FCD1F5C1AD18C23000082C2 /* KYVoiceCurveTests.m */; };
 		5FCD1F681AD1AD84000082C2 /* VoiceCurveView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FCD1F671AD1AD84000082C2 /* VoiceCurveView.m */; };
+		5FCD1F6B1AD27AE3000082C2 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FCD1F6A1AD27AE3000082C2 /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,7 @@
 		5FCD1F5C1AD18C23000082C2 /* KYVoiceCurveTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KYVoiceCurveTests.m; sourceTree = "<group>"; };
 		5FCD1F661AD1AD84000082C2 /* VoiceCurveView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VoiceCurveView.h; sourceTree = "<group>"; };
 		5FCD1F671AD1AD84000082C2 /* VoiceCurveView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VoiceCurveView.m; sourceTree = "<group>"; };
+		5FCD1F6A1AD27AE3000082C2 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FCD1F6B1AD27AE3000082C2 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +69,7 @@
 		5FCD1F341AD18C22000082C2 = {
 			isa = PBXGroup;
 			children = (
+				5FCD1F6A1AD27AE3000082C2 /* AVFoundation.framework */,
 				5FCD1F3F1AD18C23000082C2 /* KYVoiceCurve */,
 				5FCD1F591AD18C23000082C2 /* KYVoiceCurveTests */,
 				5FCD1F3E1AD18C23000082C2 /* Products */,
