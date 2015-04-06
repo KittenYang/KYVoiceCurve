@@ -17,21 +17,39 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CeQ-AS-dCx">
-                                <rect key="frame" x="128" y="196" width="46" height="30"/>
-                                <state key="normal" title="Button">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cover" translatesAutoresizingMaskIntoConstraints="NO" id="TBr-uR-jKH">
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CeQ-AS-dCx">
+                                <rect key="frame" x="200" y="380" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="Hbd-Vk-vj2"/>
+                                    <constraint firstAttribute="height" constant="200" id="fqM-FK-8og"/>
+                                </constraints>
+                                <state key="normal" image="bt"/>
                                 <connections>
                                     <action selector="presentAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kJ5-Ap-y7g"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="TBr-uR-jKH" secondAttribute="trailing" id="8px-S7-x7r"/>
+                            <constraint firstItem="TBr-uR-jKH" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="KkO-Qe-Omc"/>
+                            <constraint firstAttribute="centerX" secondItem="CeQ-AS-dCx" secondAttribute="centerX" id="Van-U7-xfn"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="TBr-uR-jKH" secondAttribute="bottom" id="YYE-gV-dZ2"/>
+                            <constraint firstAttribute="bottom" secondItem="CeQ-AS-dCx" secondAttribute="bottom" constant="20" id="ioc-h1-chd"/>
+                            <constraint firstItem="TBr-uR-jKH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="lBG-VX-vVV"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="549" y="433"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="bt" width="359" height="361"/>
+        <image name="cover" width="719" height="1131"/>
+    </resources>
 </document>
