@@ -17,13 +17,12 @@
 
 @end
 
-@implementation ViewController{
-    AVAudioRecorder *recorder;
-}
+@implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     UILongPressGestureRecognizer *longGes = [[UILongPressGestureRecognizer alloc]initWithTarget:self action:@selector(longPress:)];
+    longGes.minimumPressDuration = 0.8;
     [self.longPressBt addGestureRecognizer:longGes];
 }
 
@@ -31,16 +30,13 @@
     [super didReceiveMemoryWarning];
     
 }
-- (IBAction)presentAction:(id)sender {
-
-//    VoiceCurveView *voiceCurveView = [[VoiceCurveView alloc]initWithFrame:self.view.frame superView:self.view];
-//    [voiceCurveView present];
-}
 
 -(void)longPress:(UILongPressGestureRecognizer *)longGes{
-    longGes.minimumPressDuration = 0.8;
-    VoiceCurveView *voiceCurveView = [[VoiceCurveView alloc]initWithFrame:self.view.frame superView:self.view];
-    [voiceCurveView present];
+    if (longGes.state == UIGestureRecognizerStateBegan) {
+        
+        VoiceCurveView *voiceCurveView = [[VoiceCurveView alloc]initWithFrame:self.view.frame superView:self.view];
+        [voiceCurveView present];        
+    }
 }
 
 
