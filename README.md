@@ -1,5 +1,6 @@
 # KYVoiceCurve
 类似Apple Watch中语音的声音曲线动画
+The animating voice curve like Apple Watch
 
 
 ![](voice_curve.gif)
@@ -7,6 +8,8 @@
 
 
 ##Usage
+
+Firstly,
 ```
 #import "VoiceCurveView.h"
 ```
@@ -19,3 +22,6 @@ Then,at the trigger method,like that:
 ```
 
 
+##License
+
+MIT License
