@@ -176,8 +176,8 @@
     CGFloat volume = [self.recorder averagePowerForChannel:0];
     CGFloat controlY1 = ScreenHeight - (volume+60);
     CGFloat controlY2 = ScreenHeight - ((volume+60)+10)*1.5;
-    CGFloat controlY3 = ScreenHeight - ((volume+60)+30)*2.3;
-    CGFloat controlY4 = ScreenHeight - ((volume+60)+15)*2;
+    CGFloat controlY3 = ScreenHeight - ((volume+60)+15)*2.3;
+    CGFloat controlY4 = ScreenHeight - ((volume+60)+12)*2;
     CGFloat controlY5 = ScreenHeight - ((volume+60)+5)*1.5;
     
     layer1.path = [self createBezierPathWithStartPoint:CGPointMake(30, ScreenHeight) endPoint:CGPointMake(ScreenWidth/2-10, ScreenHeight) controlPoint:CGPointMake((ScreenWidth/2-10-30)/2+30, controlY1)].CGPath;
