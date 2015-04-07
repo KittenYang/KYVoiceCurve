@@ -89,7 +89,24 @@
     layer5.fillColor = [UIColor colorWithRed:0 green:0.722 blue:1 alpha:1].CGColor;
     layer5.opacity = 0.7;
     [blurView.layer addSublayer:layer5];
+    
+    
+    //the label -- 正在聆听
+//    UIVibrancyEffect *vibrancy = [UIVibrancyEffect effectForBlurEffect:[UIBlurEffect effectWithStyle:UIBlurEffectStyleDark]];
+//    UIVisualEffectView *vibrancyView = [[UIVisualEffectView alloc]initWithEffect:vibrancy];
+//    vibrancyView.frame = blurView.bounds;
+    
+    UILabel *listeningLabel = [[UILabel alloc]init];
+    listeningLabel.frame =  CGRectMake(ScreenWidth/2 - 320/2, 100, 320, 30);
+    listeningLabel.textAlignment = NSTextAlignmentCenter;
+    listeningLabel.font = [UIFont systemFontOfSize:30.0f];
+    listeningLabel.textColor = [UIColor whiteColor];
+    listeningLabel.text = @"正在聆听...";
+    [blurView.contentView addSubview:listeningLabel];
 
+//    [vibrancyView.contentView addSubview:listeningLabel];
+//    [blurView.contentView addSubview:vibrancyView];
+    
 }
 
 //---------配置AVAudioRecorder的一些音频采样参数-------------
@@ -155,7 +172,23 @@
     
     NSLog(@"volume:%f",[self.recorder averagePowerForChannel:0]);
     
-    [self setNeedsDisplay];
+    //------重绘函数-------
+    CGFloat volume = [self.recorder averagePowerForChannel:0];
+    CGFloat controlY1 = ScreenHeight - (volume+60);
+    CGFloat controlY2 = ScreenHeight - ((volume+60)+10)*1.5;
+    CGFloat controlY3 = ScreenHeight - ((volume+60)+30)*2.3;
+    CGFloat controlY4 = ScreenHeight - ((volume+60)+15)*2;
+    CGFloat controlY5 = ScreenHeight - ((volume+60)+5)*1.5;
+    
+    layer1.path = [self createBezierPathWithStartPoint:CGPointMake(30, ScreenHeight) endPoint:CGPointMake(ScreenWidth/2-10, ScreenHeight) controlPoint:CGPointMake((ScreenWidth/2-10-30)/2+30, controlY1)].CGPath;
+    
+    layer2.path = [self createBezierPathWithStartPoint:CGPointMake(50, ScreenHeight) endPoint:CGPointMake(ScreenWidth*5/8, ScreenHeight) controlPoint:CGPointMake((ScreenWidth*5/8-50)/2+35,controlY2)].CGPath;
+    
+    layer3.path = [self createBezierPathWithStartPoint:CGPointMake((ScreenWidth/2-10-30)/2+30, ScreenHeight) endPoint:CGPointMake((ScreenWidth-20-ScreenWidth*5/8)/2+ScreenWidth*5/8-20, ScreenHeight) controlPoint:CGPointMake(((ScreenWidth-20-ScreenWidth*5/8)/2+ScreenWidth*5/8-20-((ScreenWidth/2-10-30)/2+30))/2+(ScreenWidth/2-10-30)/2+30,controlY3)].CGPath;
+    
+    layer4.path = [self createBezierPathWithStartPoint:CGPointMake(ScreenWidth/2-20, ScreenHeight) endPoint:CGPointMake(ScreenWidth*7/8, ScreenHeight) controlPoint:CGPointMake((ScreenWidth*7/8-ScreenWidth/2-20)/2+ScreenWidth/2-20, controlY4)].CGPath;
+    
+    layer5.path = [self createBezierPathWithStartPoint:CGPointMake(ScreenWidth*5/8-20, ScreenHeight) endPoint:CGPointMake(ScreenWidth-20, ScreenHeight) controlPoint:CGPointMake((ScreenWidth-20-(ScreenWidth*5/8-20))/2+ScreenWidth*5/8-20, controlY5)].CGPath;
     
 }
 
@@ -167,27 +200,6 @@
     [BezierPath moveToPoint: startPoint];
     [BezierPath addQuadCurveToPoint:endPoint controlPoint:controlPoint];
     return BezierPath;
-}
-
-//------------------重绘函数-------------------------
--(void)drawRect:(CGRect)rect{
-    
-    CGFloat volume = [self.recorder averagePowerForChannel:0];
-    CGFloat controlY1 = (-volume >= 57 && -volume <= 63) ? ScreenHeight-5 : ScreenHeight - (volume+60)*2.1;
-    CGFloat controlY2 = (-volume >= 57 && -volume <= 63) ? ScreenHeight-5 : ScreenHeight - ((volume+60)+10)*2.2;
-    CGFloat controlY3 = (-volume >= 57 && -volume <= 63) ? ScreenHeight-5 : ScreenHeight - ((volume+60)+30)*2.3;
-    CGFloat controlY4 = (-volume >= 57 && -volume <= 63) ? ScreenHeight-5 : ScreenHeight - ((volume+60)+15)*2.4;
-    CGFloat controlY5 = (-volume >= 57 && -volume <= 63) ? ScreenHeight-5 : ScreenHeight - ((volume+60)+5)*2.5;
-    
-    layer1.path = [self createBezierPathWithStartPoint:CGPointMake(30, ScreenHeight) endPoint:CGPointMake(ScreenWidth/2-10, ScreenHeight) controlPoint:CGPointMake((ScreenWidth/2-10-30)/2+30, controlY1)].CGPath;
-    
-    layer2.path = [self createBezierPathWithStartPoint:CGPointMake(50, ScreenHeight) endPoint:CGPointMake(ScreenWidth*5/8, ScreenHeight) controlPoint:CGPointMake((ScreenWidth*5/8-50)/2+35,controlY2)].CGPath;
-    
-    layer3.path = [self createBezierPathWithStartPoint:CGPointMake((ScreenWidth/2-10-30)/2+30, ScreenHeight) endPoint:CGPointMake((ScreenWidth-20-ScreenWidth*5/8)/2+ScreenWidth*5/8-20, ScreenHeight) controlPoint:CGPointMake(((ScreenWidth-20-ScreenWidth*5/8)/2+ScreenWidth*5/8-20-((ScreenWidth/2-10-30)/2+30))/2+(ScreenWidth/2-10-30)/2+30,controlY3)].CGPath;
-    
-    layer4.path = [self createBezierPathWithStartPoint:CGPointMake(ScreenWidth/2-20, ScreenHeight) endPoint:CGPointMake(ScreenWidth*7/8, ScreenHeight) controlPoint:CGPointMake((ScreenWidth*7/8-ScreenWidth/2-20)/2+ScreenWidth/2-20, controlY4)].CGPath;
-    
-    layer5.path = [self createBezierPathWithStartPoint:CGPointMake(ScreenWidth*5/8-20, ScreenHeight) endPoint:CGPointMake(ScreenWidth-20, ScreenHeight) controlPoint:CGPointMake((ScreenWidth-20-(ScreenWidth*5/8-20))/2+ScreenWidth*5/8-20, controlY5)].CGPath;
 }
 
 
