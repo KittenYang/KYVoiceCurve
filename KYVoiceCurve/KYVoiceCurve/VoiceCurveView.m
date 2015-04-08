@@ -186,7 +186,7 @@
     
     layer3.path = [self createBezierPathWithStartPoint:CGPointMake((ScreenWidth/2-10-30)/2+30, ScreenHeight) endPoint:CGPointMake((ScreenWidth-20-ScreenWidth*5/8)/2+ScreenWidth*5/8-20, ScreenHeight) controlPoint:CGPointMake(((ScreenWidth-20-ScreenWidth*5/8)/2+ScreenWidth*5/8-20-((ScreenWidth/2-10-30)/2+30))/2+(ScreenWidth/2-10-30)/2+30,controlY3)].CGPath;
     
-    layer4.path = [self createBezierPathWithStartPoint:CGPointMake(ScreenWidth/2-20, ScreenHeight) endPoint:CGPointMake(ScreenWidth*7/8, ScreenHeight) controlPoint:CGPointMake((ScreenWidth*7/8-ScreenWidth/2-20)/2+ScreenWidth/2-20, controlY4)].CGPath;
+    layer4.path = [self createBezierPathWithStartPoint:CGPointMake(ScreenWidth/2-20, ScreenHeight) endPoint:CGPointMake(ScreenWidth*7/8, ScreenHeight) controlPoint:CGPointMake((ScreenWidth*7/8-ScreenWidth/2+20)/2+ScreenWidth/2-20, controlY4)].CGPath;
     
     layer5.path = [self createBezierPathWithStartPoint:CGPointMake(ScreenWidth*5/8-20, ScreenHeight) endPoint:CGPointMake(ScreenWidth-20, ScreenHeight) controlPoint:CGPointMake((ScreenWidth-20-(ScreenWidth*5/8-20))/2+ScreenWidth*5/8-20, controlY5)].CGPath;
     
